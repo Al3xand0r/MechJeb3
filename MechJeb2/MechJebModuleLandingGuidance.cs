@@ -396,7 +396,7 @@ namespace MuMech
                 }
             }
 
-            if (_landingSiteIdx > LandingSites.Count)
+            if (_landingSiteIdx < 0 || _landingSiteIdx >= LandingSites.Count)
             {
                 _landingSiteIdx = 0;
             }
